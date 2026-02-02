@@ -29,14 +29,14 @@ const linkedList = {
 
         const index = this.findIndex(value);
 
-
-        this.data.unshift(obj);
-
-        if (index !== 0) {
-            const item = this.data.shift();
-            this.data.splice(index, 0, item);
+        // first item ? unshift : splice  to don't miss order
+        if (index === 0) {
+            this.data.unshift(obj);
+        } else {
+            this.data.splice(index, 0, obj);
         }
     }
+
     ////////////////////////////////
     ,
 
