@@ -1,3 +1,6 @@
+//EDIT AT LINE 29 ADD UNSHIFT METHOD
+
+
 const linkedList = {
 
     data: [],
@@ -15,6 +18,7 @@ const linkedList = {
         return i;
     },
 
+    /////////////////////////////////// EDIT UNSHIFT
 
     enqueue(obj) {
         const value = obj.value;
@@ -25,6 +29,7 @@ const linkedList = {
 
         const index = this.findIndex(value);
 
+
         this.data.unshift(obj);
 
         if (index !== 0) {
@@ -32,7 +37,7 @@ const linkedList = {
             this.data.splice(index, 0, item);
         }
     }
-
+    ////////////////////////////////
     ,
 
     push(obj) {
