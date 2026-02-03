@@ -118,3 +118,4 @@ linkedList.display();
 
 console.log(linkedList.remove(10));
 
+console.log("End of task1")
